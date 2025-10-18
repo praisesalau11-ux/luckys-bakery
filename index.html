@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lucky's Bakery</title>
+<style>
+  :root{--accent:#d35400;--bg:#fff;--muted:#666}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f6f6;color:#222}
+  header{background:var(--accent);color:#fff;padding:20px;text-align:center;display:flex;align-items:center;justify-content:center;gap:10px;}
+  header img{width:80px;height:80px;border-radius:8px;}
+  .container{max-width:900px;margin:18px auto;padding:0 15px}
+  .hero{display:flex;gap:15px;align-items:center;background:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+  .hero img{width:120px;height:120px;object-fit:cover;border-radius:8px}
+  .hero .cta{flex:1}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none}
+  section{margin-top:16px}
+  .grid{display:flex;flex-wrap:wrap;gap:12px}
+  .card{background:#fff;padding:12px;border-radius:8px;flex:1;min-width:220px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+  img.gallery{width:100%;height:160px;object-fit:cover;border-radius:6px}
+  footer{margin:24px 0;text-align:center;color:var(--muted);font-size:14px}
+  @media(max-width:600px){.hero{flex-direction:column;align-items:flex-start}.hero img{width:100%;height:200px}}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Lucky's Bakery Logo">
+  <h1>Lucky's Bakery</h1>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <img src="images/hero.jpg" alt="Lucky's Bakery">
+    <div class="cta">
+      <h2>Welcome to Lucky's Bakery</h2>
+      <p>Family-owned bakery making fresh cakes, breads and pastries daily. Order on WhatsApp for quick pickup.</p>
+      <a class="btn" href="https://wa.me/2349000000000?text=Hello%20Lucky%27s%20Bakery%2C%20I%20want%20to%20place%20an%20order">Order on WhatsApp</a>
+    </div>
+  </div>
+
+  <section>
+    <h3>Our Menu</h3>
+    <div class="grid">
+      <div class="card"><strong>Chocolate Fudge Cake</strong><p>Rich chocolate cake, 8-inch — ₦12,000</p></div>
+      <div class="card"><strong>Vanilla Celebration Cake</strong><p>Classic vanilla with buttercream — ₦11,000</p></div>
+      <div class="card"><strong>Cinnamon Rolls (6)</strong><p>Soft & gooey — ₦3,000</p></div>
+      <div class="card"><strong>Fresh Baguette</strong><p>Daily baked loaf — ₦900</p></div>
+      <div class="card"><strong>Cupcake (single)</strong><p>Flavor with frosting — ₦500</p></div>
+      <div class="card"><strong>Party Platter</strong><p>Assorted mini pastries (20) — ₦8,500</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Gallery</h3>
+    <div class="grid">
+      <img class="gallery" src="images/cake1.jpg" alt="Cake 1">
+      <img class="gallery" src="images/cake2.jpg" alt="Cake 2">
+      <img class="gallery" src="images/cake3.jpg" alt="Cake 3">
+    </div>
+  </section>
+
+  <section>
+    <h3>Opening Hours & Location</h3>
+    <p><strong>Mon–Sat:</strong> 7:00 AM – 8:00 PM<br><strong>Sun:</strong> 8:00 AM – 4:00 PM</p>
+    <p>12 Bakery Lane, Surulere, Lagos</p>
+  </section>
+
+  <section>
+    <h3>What Customers Say</h3>
+    <div class="grid">
+      <div class="card">“Delicious cakes. Always on time!” — Aisha M.</div>
+      <div class="card">“Best cinnamon rolls in town.” — Chinedu O.</div>
+    </div>
+  </section>
+
+  <section style="text-align:center;margin-top:18px">
+    <a class="btn" href="tel:+2349000000000">Call: +234 900 000 0000</a>
+    <span style="margin-left:10px;color:var(--muted)"> or </span>
+    <a class="btn" href="mailto:luckybakery@example.com" style="background:#2c3e50">Email Us</a>
+  </section>
+
+  <footer>© Lucky's Bakery — Share this link with customers</footer>
+</div>
+
+</body>
+</html>
